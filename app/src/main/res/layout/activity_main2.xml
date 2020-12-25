@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <data>
+       <variable
+           name="expdetailExpModel"
+           type="com.pousheng.draggerdemo.model.ExpdetailExpModel" />
+    </data>
+   <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@{expdetailExpModel.exp}"/>
+
+       <TextView
+           android:id="@+id/tvAdd"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="点击加"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:textColor="@android:color/black"/>
+   </LinearLayout>
+
+
+</layout>
